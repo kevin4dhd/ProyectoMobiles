@@ -1,9 +1,12 @@
 package kevin.piazzoli.ejerciciosmoviles;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import kevin.piazzoli.ejerciciosmoviles.Activity.PrimerEjercicio.PrimerEjercicioActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -19,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
         btnPrimerEjercicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MenuActivity.this, PrimerEjercicioActivity.class));
             }
         });
 
